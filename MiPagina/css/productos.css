@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+/* header */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu";
+    background-color: #5ec8f27a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  } 
+  .header {
+    display: flex;
+    height: 7vh;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+    min-width: 100vw;
+    /* max-width: 95vw; */
+  }
+  
+  .botones {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    margin: 0% 10% 0% 0%;
+    gap: 2%;
+  }
+  
+  .botones button {
+    background-color: transparent;
+    border: none;
+    /* border-right: 3px solid #ddd;
+      border-left: 3px solid #ddd; */
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    opacity: 0.6;
+    
+  }
+  .botones a:link{
+    text-decoration: none;
+  }
+  
+  .botones button:hover {
+    opacity: 1;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    justify-content: flex-end;
+    /* border: 3px solid rgb(241, 0, 0); */
+  }
+  
+  .logo img {
+    height: 8vh;
+    margin-top: 4.5vh;
+  }
+  @media (max-width:900px) {
+    .header{
+      width: 100vw;
+    }
+    .botones{
+    margin: 0 5% 0 0;
+    }
+    .logo{
+      margin: 0 0 0 5% ;
+    }
+    .botones{
+      width: 80vw;
+    }
+    .logo{
+      width: 20vw;
+    }
+    .logo img{
+      width: 100%;
+    }
+  }
+
+
+
+  /* contenido */
+  .tarjeta-1, .tarjeta-l, .tarjeta-r, .tarjeta-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    border-radius: 5%;
+    margin-bottom: 3vh;
+    padding: 1rem;
+    width: 100vw;
+  }
+.tarjeta-1{
+  margin-top: 15vh;
+  margin-bottom: 3vh;
+}
+.tarjeta-l{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  flex-direction: row-reverse;
+}
+.tarjeta-r{
+  margin-top: 3vh;
+}
+.tarjeta-ul{
+  margin-top: 3vh;
+  margin-bottom: 6vh;
+  flex-direction: row-reverse;
+}
+
+.tarjeta-l img, .tarjeta-r img, .tarjeta-1 img, .tarjeta-ul img{
+  height: 300px;
+  border-radius: 8%;
+}
+.texto{
+  font-weight: 300;
+  font-size: 1.2rem;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.boton-producto{
+  height: 2rem;
+  font-family: ubuntu;
+  background-color: white;
+  border: 1px solid #DAE285;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 1;
+  width: 10vw;
+}
+
+.boton-producto:hover{
+  opacity: 0.8;
+}
+@media (max-width:900px) {
+  .texto{
+    width: 80vw;
+  }
+  .tarjeta-1, .tarjeta-l, .tarjeta-r, .tarjeta-ul{
+    flex-direction: column-reverse;
+  }
+  .tarjeta-r img, .tarjeta-l img, .tarjeta-1 img, .tarjeta-ul img{
+    width: 45vw;
+    height: auto;
+    border-radius: 4%;
+    background-color: blueviolet;
+  }
+  .boton-producto{
+    align-self: center;
+    width: 40vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex;
+  height: 8vh;
+  width: 100%;
+}
+  .footer .logoafip{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    height: 100%
+  }
+  .footer .logosRRSS{
+    display: flex;
+    height: 65%;
+    width: 80%;
+    gap: 10vw;
+    justify-content: flex-start;
+    margin-left: 5vw;
+  }
+  .footer a {
+    display: flex;
+    align-items: center;
+  }
+  .footer a img {
+    height: 80%;
+    display: flex;
+  }
+

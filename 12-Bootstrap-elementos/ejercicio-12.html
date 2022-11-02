@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotronConModal container py-4">
+<div class="bg-light p-5 rounded-3">
+<div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+    <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Example button
+      </button>
+</div>
+</div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Este es el body del modal
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<hr>
+
+<div class="container formulario py-4">
+    <form action="">
+        <div class="mb-3">
+            <label class="form-label" for="nombre">Nombre</label>
+            <input id="nombre" type="text" class="form-control" placeholder="Tu Nombre"/>
+        </div>
+
+        <div class="mb-3">
+            <label for="inputTelefono" class="form-label">Teléfono</label>
+            <input type="number" class="form-control" id="inputTelefono" placeholder="Tu número de teléfono" aria-describedby="phoneNumber" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="inputTextarea">Introduce un mensaje</label>
+            <textarea class="form-control" placeholder="Deja un mensaje aqui" id="inputTextarea"></textarea>
+            <div class="form-text">Introduce tu apellido</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<hr>
+
+<div class="tarjeta container py-4">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://scontent.fros2-2.fna.fbcdn.net/v/t39.30808-6/291119495_5316755781711301_504411119208476683_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-l4w812wW0UAX8sxFI3&_nc_ht=scontent.fros2-2.fna&oh=00_AT8zfFjUIJ0qXg2tJN1B2DpVKZZA3GR55nhFhn-TAEtC8g&oe=633888B7" class="img-fluid" style="border-radius: 4px 0 0 0;" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Juan Mateo Bigoritto</h5>
+          <p class="card-text">Hola! Soy Juan Mateo, tengo 21 años, vivo en Argentina y estudio Ingeniería Informática</p>
+        </div>
+      </div>
+      <div class="card-footer align-end text-end"><small class="text-muted">juanmateobigoritto@gmail.com</small></div>
+    </div>
+  </div>
+
+    
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+</html>
