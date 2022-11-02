@@ -1,0 +1,42 @@
+.contenedor-hidden{
+    background-color: bisque;
+    height: 100px;
+    width: 300px;
+    padding: 15px;
+    overflow: hidden;
+}
+.contenedor-scroll{
+    background-color: bisque;
+    height: 100px;
+    margin: 10px 0px;
+    width: 300px;
+    padding: 15px;
+    overflow: scroll;
+}
+
+.contenedor-visible{
+    background-color: bisque;
+    height: 100px;
+    margin: 10px 0px;
+    width: 300px;
+    padding: 15px;
+    overflow: visible;
+}
+
+.contenedor-auto{
+    background-color: bisque;
+    height: 100px;
+    margin: 10px 0px;
+    width: 300px;
+    padding: 15px;
+    overflow: auto;
+}
+.contenedor-scrollx{
+    background-color: bisque;
+    height: 100px;
+    margin: 10px 0px;
+    width: 300px;
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

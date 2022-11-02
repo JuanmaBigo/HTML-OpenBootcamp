@@ -1,0 +1,36 @@
+*{
+    padding:0;
+    margin:0;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+}
+.video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+}
+.header{
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+cursor: pointer;
+background-color: cornflowerblue;
+border: cornflowerblue solid 2px;
+border-radius: 5%;
+
+}
+.boton:hover{
+    background-color: rgb(133, 133, 255);
+    border: rgb(133, 133, 255) solid 2px;
+    border-radius: 5%;
+    }
